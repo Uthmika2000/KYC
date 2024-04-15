@@ -1,0 +1,158 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background: #11101d;
+  transition: all 0.5s;
+  overflow-y: auto; /* Enable scrolling */
+  display: flex;
+  flex-direction: column; /* Display items vertically */
+}
+
+.sidebar.active {
+  width: 60px;
+}
+
+.logo_details {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px; /* Adjust padding */
+  justify-content: space-between; /* Spacing between logo and menu icon */
+}
+
+.logo_name {
+  margin-left: 1px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.icon {
+  font-size: 28px;
+  color: #fff;
+}
+
+.nav-list {
+  flex-grow: 1; /* Grow to fill remaining space */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin: 8px 0;
+  list-style: none;
+}
+
+.nav-list li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.4s;
+  padding: 10px 20px; /* Adjust padding */
+}
+
+.nav-list li a:hover {
+  background: #1d1b31;
+  border-left: 4px solid #e76f51;
+}
+
+.nav-list li a .bx {
+  font-size: 22px;
+  margin-right: 15px; /* Adjust margin */
+}
+
+.nav-list li span {
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.4s;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.nav-list li.active {
+  background: #1d1b31;
+  border-left: 4px solid #e76f51;
+}
+
+.nav-list li.active .tooltip {
+  display: block;
+  transition: all 0.5s;
+}
+
+.tooltip {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: #1d1b31;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 0 10px 10px 0;
+  font-size: 15px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.profile {
+  padding: 0;
+  background-color: #1d1b31;
+  border-top: 1px solid #353535;
+}
+
+.admin-info {
+  display: flex;
+  align-items: center;
+}
+
+.admin-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0;
+}
+
+.align-middle{
+  margin-left: 10px;
+}
+
+.avatar{
+  margin-left: 0;
+}
+
+#log_out {
+  font-size: 22px;
+  margin-left: 0;
+  padding-left: 0;
+  color: #fff;
+  cursor: pointer;
+  
+}
+
+@media (max-width: 991.98px) {
+  .layout-content {
+      width: 100%;
+  }
+
+  .navbar-custom {
+      width: 100%;
+  }
+}
+
+.app-brand-logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  margin-right: 10px; /* Adjust as needed */
+}
+
+.app-brand-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem; /* Adjust as needed */
+  font-weight: bold;
+}
